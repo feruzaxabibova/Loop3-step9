@@ -1,0 +1,135 @@
+.section-film {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.section-film__list {
+    padding: 0;
+    list-style-type: none;
+    margin: 35px 0 0 200px;
+    display: flex;
+}
+
+.section-film__item {
+    margin-right: 35px;
+}
+
+.section-film__link {
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #B1B1B1;
+    transition: all 0.4s ease;
+}
+
+.section-film__link:hover {
+    color: #000;
+}
+
+.section-film__icon {
+    font-size: 40px;
+    display: inline-block;
+    color: #B2CDF2;
+    margin-left: 78px;
+    transform: translateY(93px);
+}
+
+.section-film__img {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: -15px;
+    margin-left: 200px;
+}
+
+.section-film__item-link {
+    text-decoration: none;
+}
+
+.item-img__img {
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.item-img__img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.item-img__img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.item-img__img img {
+    width: 180px; 
+    height: 130px;
+    display: block;
+    box-shadow: 0px 25px 17px -20px rgba(0, 0, 0, 0.70);
+    position: relative;
+}
+
+.item-img__img:hover .img-play {
+    opacity: 1;
+}
+
+.img-play {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.item-img__content {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.item-img__content-time {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: bold;
+    color: #A6A8AC;
+}
+
+.item-img__content-text {
+    margin: 0;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #3F4043;
+}
+
+.hr-film {
+    margin-top: 40px;
+    height: 2px;
+    background-color: #DEDEDE;
+    border: none;
+}
+
+.hr-blue {
+    display: block;
+    width: 119px;
+    height: 8px;
+    background-color: #B3CEF2;
+    border-radius: 50px;
+    transform: translateY(-13px) translateX(600px);
+    cursor: pointer;
+}

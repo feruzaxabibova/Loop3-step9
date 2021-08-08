@@ -1,0 +1,159 @@
+.section-music {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.section-music__inner {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.section-music__link {
+    text-decoration: none;
+}
+
+.section-music__name {
+    display: flex;
+}
+
+.name-img {
+    margin-right: 25px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    box-shadow: 0px 33px 33px -21px rgba(0, 0, 0, 0.25);
+}
+
+.section-music__content {
+    margin-top: 10px;
+}
+
+.music__content-name {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.music__content-text {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: bold;
+    color: #A6A8AC;
+    margin: 0;    
+}
+
+.section-music__time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.time {
+    margin: 0;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: bold;
+    color: #A6A8AC;
+}
+
+.time-range {
+    width: 300px;
+    margin: 0 15px;
+}
+
+.section-music__list {
+    display: flex;
+    list-style-type: none;
+    margin-top: -35px;
+    margin-left: 35px;
+    padding: 0;
+}
+
+.section-music__item-img {
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.section-music__item-img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.section-music__item-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-music__img {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin-bottom: 16px;
+    box-shadow: 0px 25px 17px -20px rgba(0, 0, 0, 0.70);
+}
+
+.img-play__music {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.section-music__item-img:hover .img-play__music {
+    opacity: 1;
+}
+
+.section-music__img--unwind {
+    width: 56px;
+    height: 140px;
+    display: block;
+    margin-bottom: 16px;
+    box-shadow: 0px 25px 17px -20px rgba(0, 0, 0, 0.70);
+}
+
+.section-music__img-unwind {
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.section-music__img-unwind:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.item-text-unwind {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 3px;
+}
+
+.item-text {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 38px;
+}
+
